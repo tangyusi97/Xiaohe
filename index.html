@@ -53,7 +53,7 @@
   }
 
   $('#input').oninput = e => {
-    if (e.data == selectedList[$('h1').innerText]) {
+    if (e.data.toLowerCase() == selectedList[$('h1').innerText]) {
       $('#input').style.background = 'green';
       nextOne();
       setTimeout(() => {
